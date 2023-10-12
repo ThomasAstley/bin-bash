@@ -9,7 +9,7 @@ mkdir -p /tmp/$USER
 
 lap() { : ; } #; lap() { echo $1 ; } ; time {
 
-export META_HOME='/home/nadim/nadim'
+export META_HOME='/home/tom-kubuntu/tom'
 export N="$META_HOME"
 export NC="$META_HOME/config"
 export NB="$META_HOME/bin"
@@ -58,7 +58,7 @@ export FIGNORE="blib:_build:.git"
 export TERMCMD=tmux
 export BROWSER=google-chrome
 export MANPAGER="vim  -c 'set nospell' +MANPAGER -"
-export MANPATH="$MANPATH:/home/nadim/perl5/man"
+#export MANPATH="$MANPATH:/home/nadim/perl5/man"
 export PAGER="less -R"
 # export PAGER="vim -R -c 'set nospell' -c 'AnsiEsc' -"
 # export PAGER="vimpager -c 'set nospell'"
@@ -92,7 +92,7 @@ source "$META_HOME/config/ansi_colors.sh"                        ; lap 'ansi col
 source "$META_HOME/config/aliases.sh"                            ; lap 'aliases'
 source "$META_HOME/config/history.sh"                            ; lap 'history'
 source "$META_HOME/config/info.sh"                               ; lap 'info'
-source "$META_HOME/bin/completions/completions.sh"               ; lap 'completions'
+#source "$META_HOME/bin/completions/completions.sh"               ; lap 'completions'
 source "$META_HOME/bin/bash/bash_divers.sh"                      ; lap 'bash_divers'
 #source "$META_HOME/bin/bash/ditto.sh"                            ; lap ditto
 source "$META_HOME/bin/bash/declare_A"                           ; lap 'functions'
@@ -108,7 +108,7 @@ source "$META_HOME/config/ranger.sh"                             ; lap 'ranger'
 source "$META_HOME/config/gv"                                    ; lap 'git gv'
 source "$META_HOME/config/git_bash_integration.sh"               ; lap 'git bash integration'
 source "$META_HOME/config/prompt.sh"                             ; lap 'prompt'
-source "$META_HOME/config/ftl.sh"                                ; lap 'ftl'
+#source "$META_HOME/config/ftl.sh"                                ; lap 'ftl'
 source "$META_HOME/config/piper.sh"                              ; lap 'piper'
 source "$META_HOME/config/ra.sh"                                 ; lap 'ra' 
 # source "$META_HOME/bin/bash/h.sh"                                ; lap 'h'
@@ -130,3 +130,4 @@ source "$META_HOME/config/gpg.sh"                                ; lap 'gpg'
 #} | ts -i %.s | piper '[^ ]+' {blue}'sprintf "%.3f", {}'{reset}
 #} | ts -i %.s | sort -r | piper '[^ ]+' {blue}'sprintf "%.3f", {}'{reset}
 
+. "$HOME/.cargo/env"
