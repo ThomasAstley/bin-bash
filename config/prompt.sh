@@ -17,7 +17,8 @@ prompt_normal() { git_mini_prompt 0 ; PROMPT_COMMAND='show_prompt_normal' ; }
 prompt_mini() { git_mini_prompt 1 ; PROMPT_COMMAND='show_prompt_mini' ; }
 prompt_git_reduced() { NO_FULL_GIT="$1" ; }
 
-source "$(brew --prefix)/opt/gitstatus/gitstatus.plugin.sh"
+#source "$(brew --prefix)/opt/gitstatus/gitstatus.plugin.sh"
+source "/home/tom-kubuntu/tom/devel/gitstatus/gitstatus.plugin.sh"
 gitstatus_stop && gitstatus_start -s -1 -u -1 -c -1 -d -1 ;
 
 gitstatus_prompt() 
@@ -95,7 +96,8 @@ dir_stack=`dirs -p |  wc -l` ; [[ "$dir_stack" -lt 2 ]] && dir_stack= || dir_sta
 
 PS1='${debian_chroot:+($debian_chroot)}'
 PS1+="$STATUS$(history | wc -l) $T$WHO\[$BLUE\]$dir_stack\w"
-PS1+="\[$DIM_CYAN\]$(tmuxslider-status)\[$YELLOW\]$(gitstatus_prompt)\[$MAGENTA\]$(GIT_DIR=.gv gitstatus_prompt --short)\[$CYAN\]$(tmuxake status)\[$RESET\]"
+#PS1+="\[$DIM_CYAN\]$(tmuxslider-status)\[$YELLOW\]$(gitstatus_prompt)\[$MAGENTA\]$(GIT_DIR=.gv gitstatus_prompt --short)\[$CYAN\]$(tmuxake status)\[$RESET\]"
+PS1+="\[$YELLOW\]$(gitstatus_prompt)\[$MAGENTA\]$(GIT_DIR=.gv gitstatus_prompt --short)\[$RESET\] "
 # PS1+="\[$DIM_CYAN\]$(tmuxslider-status)\[$YELLOW\]\[$CYAN\]$$(tmuxake status)\[$RESET\]"
 
 tmux-refresh-status

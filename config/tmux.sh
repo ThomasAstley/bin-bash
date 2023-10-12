@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ~/nadim/bin/completions/bash_completion_tmux.sh
+source ~/tom/bin/completions/bash_completion_tmux.sh
 
 # ftl binding in "$META_HOME/config/ftl.sh" 
 

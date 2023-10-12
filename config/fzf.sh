@@ -3,9 +3,9 @@ export FZF_DEFAULT_OPTS="--cycle --reverse --inline-info --color='hl:106'"
 export FZF_PREVIEW_COMMAND="tvcat {}"
 
 #history via fzf
-source ~/nadim/bin/ehc
+#source ~/nadim/bin/ehc
 
-source ~/nadim/devel/repositories/fzf-marks/fzf-marks.plugin.bash
+source $META_HOME/devel/fzf-marks/fzf-marks.plugin.bash
 
 # use what fzf comes with
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -234,11 +234,11 @@ alias gnb='git checkout -b' ; __git_complete gnb _git_branch
 alias gm='git merge' ; __git_complete gm _git_merge
 alias git_remove_from_index='git reset' ; __git_complete git_remove_from_index _git_rm
 
-alias gan='git annex'
-. /usr/share/bash-completion/completions/git-annex >/dev/null 2>&1 
-__git_complete gan _git-annex
-
-alias gans='git annex sync --content'
+#alias gan='git annex'
+#. /usr/share/bash-completion/completions/git-annex >/dev/null 2>&1 
+#__git_complete gan _git-annex
+#
+#alias gans='git annex sync --content'
 
 git_track_all_branches()
 {

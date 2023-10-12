@@ -37,6 +37,6 @@ docker_container_rm()	{ _interactive_docker 	'dpa'			'rm'		$* ; }
 _interactive_docker()	{ for s in $( eval $1 ) ; do docker $2 "$s" ${*:3} ; done ; }
 
 # add completion via fzf with ',' directly on the command line
-source /home/nadim/nadim/devel/repositories/docker-fzf-completion/docker-fzf.bash
+#source /home/nadim/nadim/devel/repositories/docker-fzf-completion/docker-fzf.bash
 export FZF_COMPLETION_TRIGGER=','
 

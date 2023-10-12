@@ -8,7 +8,7 @@ DIRX_EDIT=''   # prefix for edit command
 
 # declare commands and the corresponding path
 declare -A cs=(\
-[c]="/home/nadim/nadim/bin/cheat_sheet" \
+[c]="/home/tom-kubuntu/tom/bin/cheat_sheet" \
 )
 
 for c in "${!cs[@]}" ; do
