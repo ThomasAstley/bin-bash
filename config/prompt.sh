@@ -95,10 +95,8 @@ dir_stack=`dirs -p |  wc -l` ; [[ "$dir_stack" -lt 2 ]] && dir_stack= || dir_sta
 (($(tmux list-windows | wc -l) ==  1)) && T="\[${MAGENTA}T \]" || T=
 
 PS1='${debian_chroot:+($debian_chroot)}'
-PS1+="$STATUS$(history | wc -l) $T$WHO\[$BLUE\]$dir_stack\w"
-#PS1+="\[$DIM_CYAN\]$(tmuxslider-status)\[$YELLOW\]$(gitstatus_prompt)\[$MAGENTA\]$(GIT_DIR=.gv gitstatus_prompt --short)\[$CYAN\]$(tmuxake status)\[$RESET\]"
-PS1+="\[$YELLOW\]$(gitstatus_prompt)\[$MAGENTA\]$(GIT_DIR=.gv gitstatus_prompt --short)\[$RESET\] "
-# PS1+="\[$DIM_CYAN\]$(tmuxslider-status)\[$YELLOW\]\[$CYAN\]$$(tmuxake status)\[$RESET\]"
+PS1+="$STATUS$(history | wc -l) $T\[$BLUE\]$dir_stack\w "
+PS1+="\[$YELLOW\]$(gitstatus_prompt)\[$MAGENTA\]$(GIT_DIR=.gv gitstatus_prompt --short)\[$RESET\]"
 
 tmux-refresh-status
 }

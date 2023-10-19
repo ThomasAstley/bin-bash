@@ -1,6 +1,6 @@
 
 export FZF_DEFAULT_OPTS="--cycle --reverse --inline-info --color='hl:106'"
-export FZF_PREVIEW_COMMAND="tvcat {}"
+export FZF_PREVIEW_COMMAND="vimkat {}"
 
 #history via fzf
 #source ~/nadim/bin/ehc

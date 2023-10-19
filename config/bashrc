@@ -62,7 +62,7 @@ export MANPAGER="vim  -c 'set nospell' +MANPAGER -"
 export PAGER="less -R"
 # export PAGER="vim -R -c 'set nospell' -c 'AnsiEsc' -"
 # export PAGER="vimpager -c 'set nospell'"
-export GIT_PAGER="vimpager -c 'set nospell'"
+#export GIT_PAGER="vimpager -c 'set nospell'"
 export GREP_COLORS='ms=32:mc=32:sl=:cx=:fn=38;5;97:ln=38;5;28:bn=38;5;28:se=36'
 
 export EDITOR=vim

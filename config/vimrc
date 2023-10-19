@@ -1,6 +1,6 @@
 
 let mapleader = "\<space>" 
-set rtp+=/home/nadim/nadim/bin/
+set rtp+=/home/tom-kubuntu/tom/bin/
 
 source $META_HOME/config/vimrc_functions
 source $META_HOME/config/vimrc_set

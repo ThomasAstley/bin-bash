@@ -12,7 +12,7 @@ filetype plugin indent on    " set file type detection back on
 
 " fzf-tldr ------------------------------------------------------
 
-source /home/nadim/nadim/devel/repositories/fzf-tldr/fzf-tldr.vim
+" source /home/nadim/nadim/devel/repositories/fzf-tldr/fzf-tldr.vim
 
 au BufRead,BufNewFile *.tldr set filetype=tldr
 " autocmd FileType tldr nnoremap <buffer> <F3> :TldrNext<CR>

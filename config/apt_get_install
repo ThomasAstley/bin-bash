@@ -512,3 +512,9 @@ openssh-server
 gnupg2
 gifsicle
 perlbrew
+xsel
+meld
+delta
+bat
+lscolors
+vim-gtk3

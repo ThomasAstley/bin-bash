@@ -16,7 +16,7 @@ tmux bind -Ttable_ctl_g C-k popup -w 80% -h 80% -E -d "#{pane_current_path}" tmu
 tmux bind -Ttable_ctl_g C-h popup -w 80% -h 80% -E -d "#{pane_current_path}" tmux_get_sha
 tmux bind -Ttable_ctl_g C-f popup -w 80% -h 80% -E -d "#{pane_current_path}" tmux_get_file
 tmux bind -Ttable_ctl_g C-g run   "tmux display -p '#{pane_id}'>/tmp/tmux_ftll_destination_pane" \\\; new-window -c "#{pane_current_path}" "tmux_get_ftl"
-tmux bind -Ttable_ctl_g C-t run   "tmux display -p '#{pane_id}'>/tmp/tmux_fzf-tldr_destination_pane" \\\; new-window -c "#{pane_current_path}" "tmux_fzf-tldr"
+# tmux bind -Ttable_ctl_g C-t run   "tmux display -p '#{pane_id}'>/tmp/tmux_fzf-tldr_destination_pane" \\\; new-window -c "#{pane_current_path}" "tmux_fzf-tldr"
 
 tmux bind -Ttable_ctl_g C-c run   "history | tail -n 2 | head -n 1 | perl -pe 's/^\s*[0-9]+\s*//' | tr -d '\n' | copy"
 

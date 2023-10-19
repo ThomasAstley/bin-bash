@@ -1,9 +1,8 @@
 [user]
-	name = Nadim Khemir
-	email = nadim.khemir@gmail.com
-	signingkey = D6766F7DB642F1AEF64FD10773D8826D5F9CB555
+	email = astleytj2@gmail.com
+	name = Tom Astley
 [github]
-	user = nkh
+	user = txa236
 [color]
 	ui = true
 
